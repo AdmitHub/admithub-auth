@@ -1,0 +1,16 @@
+<template name='userMenu'>
+  {{#if currentUser}}
+    <div class='mod-dropdown-trigger g-header-user-menu user-menu'>
+      <a class='user-dropdown g-header-user-menu-trigger' href='/'>{{>avatar userId=currentuser.id size='small' class='pos-inline-block' }} <i class='g-header-user-carat type-icon-inline icon-carat-down'></i></a>
+      <div class='mod-dropdown'>
+        <ul class='mod-dropdown-text-link-list' role='menu' aria-labelledby='dlabel'>
+          {{> userMenuListItems}}
+          <li><a href='/logout'>Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  {{ else }}
+    <a class='account-link g-header-nav-user-sign-up sign-up' href='/register'>Register</a>
+    <a class='account-link sign-in' href='/login'>Log In</a>
+  {{/if}}
+</template>
