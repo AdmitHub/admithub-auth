@@ -1,7 +1,10 @@
 <template name='userMenu'>
   {{#if currentUser}}
     <div class='mod-dropdown-trigger g-header-user-menu user-menu'>
-      <a class='user-dropdown g-header-user-menu-trigger' href='{{ pathFor "profile" }}'>{{>avatar userId=currentuser.id size='small' class='pos-inline-block' }} <i class='g-header-user-carat type-icon-inline icon-carat-down'></i></a>
+      <span class=''>
+        {{>avatar userId=currentuser.id size='small' class='pos-inline-block' }}
+        <i class='g-header-user-carat type-icon-inline icon-carat-down'></i>
+      </span>
       <div class='mod-dropdown'>
         <ul class='mod-dropdown-text-link-list' role='menu' aria-labelledby='dlabel'>
           {{> userMenuListItems}}
