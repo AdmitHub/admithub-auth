@@ -1,7 +1,7 @@
 Package.describe({
   name: "admithub:admithub-auth",
   summary: "Authentication configuration for admithub sites",
-  version: "0.0.3",
+  version: "0.0.4",
   git: "https://github.com/AdmitHub/admithub-auth.git"
 });
 
