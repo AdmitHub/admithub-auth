@@ -1,7 +1,12 @@
 <template name='userMenu'>
   {{#if currentUser}}
     <div class='mod-dropdown-trigger g-header-user-menu user-menu'>
-      <span class=''>
+      {{#with notificationCount}}
+        {{#if count}}
+          <span class='notification-count'>{{ count }}</span>
+        {{/if}}
+      {{/with}}
+      <span>
         {{>avatar userId=currentuser.id size='small' class='pos-inline-block' }}
         <i class='g-header-user-carat type-icon-inline icon-carat-down'></i>
       </span>

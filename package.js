@@ -1,7 +1,7 @@
 Package.describe({
   name: "admithub:admithub-auth",
   summary: "Authentication configuration for admithub sites",
-  version: "0.0.4",
+  version: "0.0.5",
   git: "https://github.com/AdmitHub/admithub-auth.git"
 });
 
@@ -20,7 +20,8 @@ Package.onUse(function(api) {
     'aldeed:simple-schema',
     'bengott:avatar@0.7.6',
     'iron:router',
-    'useraccounts:unstyled@1.9.1',
+    'kestanous:herald@1.3.0',
+    'useraccounts:unstyled@1.9.1'
   ]);
 
   api.imply(['useraccounts:unstyled', 'useraccounts:core', 'bengott:avatar']);
@@ -29,6 +30,7 @@ Package.onUse(function(api) {
   api.addFiles('lib/config.js', ['client', 'server']);
   api.addFiles('lib/auth.js', ['client', 'server']);
   api.addFiles('client/views/userMenu.html', 'client');
+  api.addFiles('client/views/userMenu.js', 'client');
   api.addFiles('server/methods.js', 'server');
   api.addFiles('server/publications.js', 'server');
   
