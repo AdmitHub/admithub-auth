@@ -7,7 +7,7 @@
         {{/if}}
       {{/with}}
       <span>
-        {{>avatar userId=currentuser.id size='small' class='pos-inline-block' }}
+        {{>avatar userId=currentUser._id size='small' class='pos-inline-block' }}
         <i class='g-header-user-carat type-icon-inline icon-carat-down'></i>
       </span>
       <div class='mod-dropdown'>
@@ -18,7 +18,7 @@
       </div>
     </div>
   {{ else }}
-    <a class='account-link g-header-nav-user-sign-up sign-up' href='/register'>Register</a>
-    <a class='account-link sign-in' href='/login'>Log In</a>
+    <a class='account-link g-header-nav-user-sign-up sign-up' href='{{ pathFor "atSignUp" }}'>Register</a>
+    <a class='account-link sign-in' href='{{ pathFor "atSignIn" }}'>Log In</a>
   {{/if}}
 </template>
