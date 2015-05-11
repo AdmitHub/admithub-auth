@@ -20,7 +20,7 @@ Package.onUse(function(api) {
     'aldeed:simple-schema',
     'bengott:avatar@0.7.6',
     'iron:router',
-    'useraccounts:unstyled@1.8.1',
+    'useraccounts:unstyled@1.9.1',
   ]);
 
   api.imply(['useraccounts:unstyled', 'useraccounts:core', 'bengott:avatar']);
