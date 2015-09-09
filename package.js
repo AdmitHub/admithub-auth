@@ -23,12 +23,13 @@ Package.onUse(function(api) {
     'iron:router',
     'kestanous:herald@1.3.0',
     'matb33:collection-hooks',
-    'useraccounts:unstyled@1.9.1'
+    'useraccounts:unstyled@1.12.3',
+    'useraccounts:iron-routing'
   ]);
 
   api.imply(['useraccounts:unstyled', 'useraccounts:core', 'bengott:avatar']);
 
-  
+
   api.addFiles('lib/config.js', ['client', 'server']);
   api.addFiles('lib/auth.js', ['client', 'server']);
   api.addFiles('public/owlAvatar.png', ['client', 'server'], {isAsset: true});
@@ -37,6 +38,6 @@ Package.onUse(function(api) {
   api.addFiles('server/hooks.js', 'server');
   api.addFiles('server/methods.js', 'server');
   api.addFiles('server/publications.js', 'server');
-  
+
   api.export('ahAuth', ['client', 'server']);
 });
