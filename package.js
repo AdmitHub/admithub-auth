@@ -1,7 +1,7 @@
 Package.describe({
   name: "admithub:admithub-auth",
   summary: "Authentication configuration for admithub sites",
-  version: "0.0.5",
+  version: "0.0.6",
   git: "https://github.com/AdmitHub/admithub-auth.git"
 });
 
@@ -16,23 +16,23 @@ Package.onUse(function(api) {
     'accounts-ui',
     'underscore',
 
-    'alanning:roles@1.2.12',
-    'aldeed:simple-schema',
-    'bengott:avatar@0.7.6',
-    'jparker:gravatar',
-    'iron:router',
+    'alanning:roles@1.2.13',
+    'aldeed:simple-schema@1.3.3',
+    'utilities:avatar@0.9.0',
+    'jparker:gravatar@0.4.1',
+    'iron:router@1.0.9',
     'kestanous:herald@1.3.0',
-    'matb33:collection-hooks',
+    'matb33:collection-hooks@0.8.0',
     'useraccounts:unstyled@1.12.3',
-    'useraccounts:iron-routing'
+    'useraccounts:iron-routing@1.12.3'
   ]);
 
-  api.imply(['useraccounts:unstyled', 'useraccounts:core', 'bengott:avatar']);
+  api.imply(['useraccounts:unstyled', 'useraccounts:core', 'utilities:avatar']);
 
 
   api.addFiles('lib/config.js', ['client', 'server']);
   api.addFiles('lib/auth.js', ['client', 'server']);
-  api.addFiles('public/owlAvatar.png', ['client', 'server'], {isAsset: true});
+  api.addAssets('public/owlAvatar.png', ['client', 'server']);
   api.addFiles('client/views/userMenu.html', 'client');
   api.addFiles('client/views/userMenu.js', 'client');
   api.addFiles('server/hooks.js', 'server');
