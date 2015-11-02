@@ -19,7 +19,11 @@
       </div>
     </li>
   {{ else }}
-    <li><a class='account-link g-header-nav-user-sign-up sign-up' href='{{ pathFor "atSignUp" }}'>Register</a></li>
-    <li><a class='account-link sign-in' href='{{ pathFor "atSignIn" }}'>Log In</a></li>
+    <li class="g-header-nav-item">
+      <a class='header-link account-link g-header-nav-user-sign-up sign-up' href='{{ pathFor "atSignUp" }}'>Register</a>
+    </li>
+    <li class="g-header-nav-item">
+      <a class='header-link account-link sign-in' href='{{ pathFor "atSignIn" }}'>Log In</a>
+    </li>
   {{/if}}
 </template>
