@@ -24,7 +24,8 @@ Package.onUse(function(api) {
     'kestanous:herald@1.3.0',
     'matb33:collection-hooks@0.8.0',
     'useraccounts:unstyled@1.12.3',
-    'useraccounts:iron-routing@1.12.3'
+    'useraccounts:iron-routing@1.12.3',
+    "meteorhacks:ssr"
   ]);
 
   api.imply(['useraccounts:unstyled', 'useraccounts:core', 'utilities:avatar']);
@@ -38,6 +39,12 @@ Package.onUse(function(api) {
   api.addFiles('server/hooks.js', 'server');
   api.addFiles('server/methods.js', 'server');
   api.addFiles('server/publications.js', 'server');
+  api.addFiles('server/enrollAccount.js', 'server');
+  api.addFiles('email/enrollAccount.js', 'server');
+  api.addAssets([
+    "email/enrollAccount.html",
+    "email/enrollAccount.txt"
+  ], "server");
 
   api.export('ahAuth', ['client', 'server']);
 });

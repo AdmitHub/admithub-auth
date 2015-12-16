@@ -1,0 +1,17 @@
+Hello and welcome to AdmitHub!
+
+Oil and our team are here to make college admissions awesome and help you get into your dream school.
+
+To start using our services, simply click the link below:
+
+{{url}}
+
+Oli can't wait to keep chatting with you.
+
+Hoot hoot,
+Oli &; Co.
+
+AdmitHub
+Harvard Innovation Launch Lab
+114 Western Ave.
+Boston, MA 02134
