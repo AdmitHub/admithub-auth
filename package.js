@@ -35,7 +35,6 @@ Package.onUse(function(api) {
   api.addFiles('lib/auth.js', ['client', 'server']);
   api.addAssets('public/owlAvatar.png', ['client', 'server']);
   api.addFiles('client/views/userMenu.html', 'client');
-  api.addFiles('client/views/userMenu.js', 'client');
   api.addFiles('server/hooks.js', 'server');
   api.addFiles('server/methods.js', 'server');
   api.addFiles('server/publications.js', 'server');

@@ -2,11 +2,6 @@
   {{#if currentUser}}
     <li class="g-header-nav-item">
       <div class='mod-dropdown-trigger g-header-user-menu user-menu'>
-        {{#with notificationCount}}
-        {{#if count}}
-        <span class='notification-count'>{{ count }}</span>
-        {{/if}}
-        {{/with}}
         <span>
           {{>avatar userId=currentUser._id size='small' class='pos-inline-block' shape='circle' }}
         </span>
